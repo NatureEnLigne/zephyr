@@ -22,7 +22,7 @@ wp-content/plugins/hello.php
 # Configuration files
 .htaccess
 .htaccess.bak
-js/modules/config.js
+# js/modules/config.js  # Maintenant sécurisé avec variables d'environnement
 
 # Log files
 *.log
