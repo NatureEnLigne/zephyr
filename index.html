@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zéphyr et l'appel du poisson - Story Map Interactive</title>
+    
+    <!-- Sécurité -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <!-- SEO et métadonnées -->
+    <meta name="description" content="Suivez le voyage extraordinaire de Zéphyr, un jeune balbuzard pêcheur, de sa naissance dans les Vosges à sa migration vers l'Afrique. Une story map interactive basée sur des données scientifiques réelles.">
+    <meta name="keywords" content="balbuzard pêcheur, migration, story map, nature, oiseaux, Pandion haliaetus">
+    <meta name="author" content="Nature en Ligne">
+    
+    <!-- Indexation (à ajuster selon vos besoins) -->
+    <meta name="robots" content="index, follow">
+    
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://api.mapbox.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+    <!-- Polices Rubik et Quicksand -->
+    <link href="https://fonts.googleapis.com/css2?family=Caladea:wght@700&family=Quicksand:wght@500&family=Rubik:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+<div id="app-title">
+    <span class="title-line" id="title-line-1"></span>
+    <span class="title-info" id="title-info">
+        <span class="info-item">
+            <i class="fas fa-clock"></i>10-15 minutes de lecture
+        </span>
+        <span class="info-item">
+            <i class="fas fa-dove"></i>Balbuzard pêcheur - <span class="latin-name">Pandion haliaetus</span>
+        </span>
+    </span>
+</div>
+<div id="app">
+    <div id="map"></div>
+    <div id="progress-minimap">
+        <div class="minimap-content">
+            <div class="minimap-indicators">
+                <div class="minimap-indicator">
+                    <i class="fas fa-flag"></i>
+                    <span id="step-text">Étape 1</span>
+                </div>
+                <div class="minimap-indicator">
+                    <i class="fas fa-route"></i>
+                    <span id="distance-text">0 km</span>
+                </div>
+                <div class="minimap-indicator">
+                    <i class="fas fa-clock"></i>
+                    <span id="time-text">0 jours</span>
+                </div>
+            </div>
+            <div id="minimap-container"></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>
