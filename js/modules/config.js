@@ -1,5 +1,5 @@
 // Configuration compatible JavaScript vanilla + Netlify
-export const MAPBOX_TOKEN = window.MAPBOX_TOKEN || "pk.eyJ1IjoibWJyb3V0aW4iLCJhIjoiY2picWk5ZGN6MDBpMTJqc2M1N2R5cTk1aiJ9.ufdRo1jWROR0au6qiDEfNQ";
+export const MAPBOX_TOKEN = window.MAPBOX_TOKEN || "pk.eyJ1IjoibWJyb3V0aW4iLCJhIjoiY21icWk5ZGN6MDBpMTJqc2M1N2R5cTk1aiJ9.ufdRo1jWROR0au6qiDEfNQ";
 
 // ⚠️ SÉCURITÉ IMPORTANTE ⚠️
 // Pour Netlify sans bundler, la clé Mapbox est publique mais sécurisée par :

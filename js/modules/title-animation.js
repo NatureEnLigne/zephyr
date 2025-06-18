@@ -193,7 +193,7 @@ function hideAnimatedTitle() {
                     titleElement.style.display = 'none';
                     // Nettoyer les styles appliqués
                     letters.forEach(letter => {
-                        gsap.clearProps(letter);
+                        gsap.set(letter, { clearProps: "all" });
                     });
                 }
             }, "-=0.2");
